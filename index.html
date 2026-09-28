@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application Form</title>
+</head>
+<body>
+
+<table align="center" width="700" border="0" cellpadding="10" cellspacing="0">
+<tr><td>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr><td align="center"><h1>Application Form</h1></td></tr>
+<tr><td><font size="2">Fields marked with * are required.</font></td></tr>
+</table>
+
+<br>
+
+<!-- A. General Information -->
+<table width="100%" border="0" cellpadding="8" cellspacing="0">
+<tr><td><b>A. General Information</b></td></tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="100%">
+<b>Proposed Insured's Full Name *</b><br>
+<input type="text" name="fullname" required size="60">
+</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Birth Date *</b><br>
+<input type="date" name="birthdate" required>
+</td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>Gender:</b></td>
+<td><input type="radio" name="gender"> Male</td>
+<td><input type="radio" name="gender"> Female</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td>
+<b>Address *</b><br>
+<textarea name="address" rows="3" cols="60" required></textarea>
+</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Phone Number *</b><br>
+<input type="tel" name="phone" placeholder="+92 300 1234567" required size="28">
+</td>
+<td width="50%">
+<b>Email Address *</b><br>
+<input type="email" name="email" placeholder="name@example.com" required size="28">
+</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>ID / CNIC Number *</b><br>
+<input type="text" name="cnic" placeholder="42101-1234567-1" required size="28">
+</td>
+<td width="50%">
+<b>Social Security / Reference Number</b><br>
+<input type="text" name="ssn" size="28">
+</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Marital Status *</b><br>
+<select name="marital" required>
+<option>Select status</option>
+<option>Single</option>
+<option>Married</option>
+<option>Divorced</option>
+<option>Widowed</option>
+</select>
+</td>
+<td width="50%">
+<b>Occupation *</b><br>
+<input type="text" name="occupation" required size="28">
+</td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>Are you retired?*</b></td>
+<td><input type="radio" name="retired" required> Yes</td>
+<td><input type="radio" name="retired" required> No</td>
+</tr>
+</table>
+<br><br>
+
+<!-- B. Type of Health Coverage -->
+<table width="100%" border="0" cellpadding="8" cellspacing="0">
+<tr><td><b>B. Type of Health Coverage</b></td></tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0">
+<tr><td>
+<b>Employee Coverage</b><br><br>
+<input type="radio" name="emp_coverage"> Yes &nbsp;&nbsp; <input type="radio" name="emp_coverage"> No<br><br>
+<b>Employee Plan Choice</b><br>
+<select name="emp_plan">
+<option>Select plan</option>
+</select>
+</td></tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0">
+<tr><td>
+<b>Spouse Coverage</b><br><br>
+<input type="radio" name="spouse_coverage"> Yes &nbsp;&nbsp; <input type="radio" name="spouse_coverage"> No<br><br>
+<b>Spouse Plan Choice</b><br>
+<select name="spouse_plan">
+<option>Select plan</option>
+</select>
+</td></tr>
+</table>
+<br>
+
+<table width="100%" border="1" cellpadding="10" cellspacing="0">
+<tr><td>
+<b>Children Coverage</b><br><br>
+<input type="radio" name="children_coverage"> Yes &nbsp;&nbsp; <input type="radio" name="children_coverage"> No<br><br>
+<b>Children Plan Choice</b><br>
+<select name="children_plan">
+<option>Select plan</option>
+</select>
+</td></tr>
+</table>
+<br><br>
+
+<!-- C. Spouse / Children Information -->
+<table width="100%" border="0" cellpadding="8" cellspacing="0">
+<tr><td><b>C. Spouse / Children Information</b></td></tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Dependent Name</b><br>
+<input type="text" name="dep_name" size="28">
+</td>
+<td width="50%">
+<b>ID / SSN</b><br>
+<input type="text" name="dep_ssn" size="28">
+</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Relationship</b><br>
+<select name="relationship">
+<option>Select relationship</option>
+<option>Spouse</option>
+<option>Son</option>
+<option>Daughter</option>
+</select>
+</td>
+<td width="50%">
+<b>Birth Date</b><br>
+<input type="date" name="dep_birthdate">
+</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Age</b><br>
+<input type="number" name="dep_age" size="10">
+</td>
+<td width="50%">
+<b>Gender</b><br>
+<select name="dep_gender">
+<option>Select gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+</td>
+</tr>
+</table>
+<br><br>
+
+<!-- D. Policy Information -->
+<table width="100%" border="0" cellpadding="8" cellspacing="0">
+<tr><td><b>D. Policy Information</b></td></tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Units</b><br>
+<input type="number" name="units" size="15">
+</td>
+<td width="50%">
+<b>Annual Premium</b><br>
+<input type="text" name="annual_premium" size="20">
+</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td>
+<b>Payment Mode *</b><br>
+<select name="payment_mode" required>
+<option>Select payment mode</option>
+<option>Monthly</option>
+<option>Quarterly</option>
+<option>Annually</option>
+</select>
+</td>
+</tr>
+</table>
+<br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Cash With Application</b><br>
+<input type="text" name="cash_with_app" size="20">
+</td>
+<td width="50%">
+<b>Planned Monthly Premium</b><br>
+<input type="text" name="planned_premium" size="20">
+</td>
+</tr>
+</table>
+<br><br>
+
+<!-- E. Required Document -->
+<table width="100%" border="0" cellpadding="8" cellspacing="0">
+<tr><td><b>E. Required Document</b></td></tr>
+</table>
+<br>
+
+<font size="2">Please attach your supporting document before submitting the application.</font>
+<br><br>
+
+<b>Attach Document *</b><br>
+<input type="file" name="document" accept=".pdf,.jpg,.jpeg,.png" required>
+<br>
+<font size="1">Accepted formats: PDF, JPG, JPEG and PNG</font>
+<br><br><br>
+
+<!-- F. Declaration -->
+<table width="100%" border="0" cellpadding="8" cellspacing="0">
+<tr><td><b>F. Declaration</b></td></tr>
+</table>
+<br>
+
+<input type="checkbox" name="confirm" required> I confirm that the information provided in this application is complete and accurate.
+<br><br>
+
+<table width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td width="50%">
+<b>Applicant Full Name / Signature *</b><br>
+<input type="text" name="signature" required size="28">
+</td>
+<td width="50%">
+<b>Application Date *</b><br>
+<input type="date" name="app_date" required>
+</td>
+</tr>
+</table>
+<br><br>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="right">
+<input type="reset" value="Clear Form">
+&nbsp;
+<input type="submit" value="Submit Application">
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+</body>
+</html>
