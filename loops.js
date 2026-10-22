@@ -68,17 +68,19 @@ for (let i = 1; i <= 10; i++) {
 }
 
 // Q9
-let mockGuesses =; 
-let guessIndex = 0;
+const correctNumber = 7;
 let userGuess;
+
 do {
-    userGuess = mockGuesses[guessIndex];
+    
+    userGuess = parseInt(prompt("Guess a number between 1 and 10:"));
     console.log(`User guessed: ${userGuess}`);
-    guessIndex++;
-} while (userGuess !== correctNumber && guessIndex < mockGuesses.length);
+} while (userGuess !== correctNumber);
+
 console.log("Correct guess found!");
 
-// Q10: Prime number check - Write a program using a for loop to check if a given number is prime.
+
+// Q10
 let checkPrime = 17;
 let isPrime = true;
 if (checkPrime <= 1) isPrime = false;
